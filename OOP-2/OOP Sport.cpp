@@ -1,27 +1,23 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 class Sport {
-private:
-    string name;
     int age;
-    string gameName;
-    string role;
+    string name, gameName, role;
 
 public:
-    Sport(string n, int a, string g, string r) {
-        name = n;
-        age = a;
-        gameName = g;
-        role = r;
+    Sport(string name, int age, string gameName, string role) {
+        this->name = name;
+        this->age = age;
+        this->gameName = gameName;
+        this->role = role;
     }
 
-    void displayDetails() {
+    void output() {
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
         cout << "Game Name: " << gameName << endl;
-        cout << "Role: " << role << endl;
-        cout << endl;
+        cout << "Role: " << role << endl << endl;
     }
 };
 
@@ -32,12 +28,11 @@ int main() {
     Sport player4("Neymar", 32, "Football", "Forward");
     Sport player5("Rashid Khan", 26, "Cricket", "All-Rounder");
 
-    cout << "Sports Player Details:\n" << endl;
-    player1.displayDetails();
-    player2.displayDetails();
-    player3.displayDetails();
-    player4.displayDetails();
-    player5.displayDetails();
+    player1.output();
+    player2.output();
+    player3.output();
+    player4.output();
+    player5.output();
 
     return 0;
 }
