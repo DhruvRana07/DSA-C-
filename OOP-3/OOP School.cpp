@@ -17,7 +17,7 @@ public:
         cout << "School Name: " << name << endl;
         cout << "Address: " << address << endl;
         cout << "Mediums: " << mediums << endl;
-        cout << "Number of Standards: " << standards << endl << endl;
+        cout << "Standards: " << standards << endl << endl;
     }
 };
 
